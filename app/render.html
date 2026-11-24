@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Banner Render</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; background: #111; overflow: hidden; }
+  .stage { position: relative; }
+  canvas { display: block; }
+  .copy { position: absolute; display: flex; flex-direction: column; justify-content: center; gap: 0.9em; font-family: Archivo, sans-serif; }
+  .copy h1 { margin: 0; font-weight: 800; line-height: 1.02; letter-spacing: -0.02em; text-wrap: balance; }
+  .copy p { margin: 0; font-weight: 500; line-height: 1.4; max-width: 30ch; }
+  .copy a { align-self: flex-start; font-weight: 700; text-decoration: none; padding: 0.95em 1.6em; border-radius: 4px; margin-top: 0.4em; }
+</style>
+</head>
+<body>
+<div class="stage" id="stage"><canvas id="c"></canvas></div>
+<script src="engine.js"></script>
+<script src="elements.js"></script>
+<script src="scenes.js"></script>
+<!-- modelos de Natal: adicione aqui (e em index.html) cada models/<nicho>-shared.js e models/<nicho>-0N.js -->
+<script>
+(async () => {
+  const q = new URLSearchParams(location.search);
+  const all = window.BannerModels || {};
+  const model = all[q.get('model')] || Object.values(all)[0];
+  if (!model) { document.body.style.color = '#fff'; document.body.textContent = 'Nenhum modelo de Natal carregado ainda.'; document.title = 'done'; return; }
+  const fmt = q.get('fmt') || 'desktop';
+  const pal = Object.assign({}, model.palettes[+(q.get('pal') || 0)]);
+  if (q.get('p')) pal.primary = '#' + q.get('p'); if (q.get('s')) pal.secondary = '#' + q.get('s');
+  const tone = q.get('tone') || model.defaultTone || 'dark';
+  const st = { tone, primary: pal.primary, secondary: pal.secondary, photoId: q.get('photo') || undefined, slots: { desktop: {}, mobile: {} }, params: { desktop: {}, mobile: {} } };
+  if (q.get('src')) st.photoSrc = q.get('src');
+  if (q.get('fx') || q.get('fy') || q.get('zoom')) { const ph = {}; for (const k of ['fx','fy','zoom']) if (q.get(k)) ph[k] = +q.get(k); st.photo = { desktop: ph, mobile: ph }; }
+  if (q.get('prm')) { const o = JSON.parse(q.get('prm')); Object.assign(st.params.desktop, o); Object.assign(st.params.mobile, o); }
+  for (const k of ['shape','texture','motif']) if (q.get(k)) { st.params.desktop[k] = q.get(k); st.params.mobile[k] = q.get(k); }
+  const ep = q.get('els') !== null && model.elementPresets ? model.elementPresets[+q.get('els')] : null;
+  if (ep) for (const f of ['desktop','mobile']) for (const [id, el] of Object.entries(ep.slots)) st.slots[f][id] = el ? { on: true, el } : { on: false };
+  // per-client slot overrides: slots={"id":{on,el,dx,dy,scale,drot}} (applied to the rendered format)
+  if (q.get('slots')) { const o = JSON.parse(q.get('slots')); for (const [id, v] of Object.entries(o)) st.slots[fmt][id] = Object.assign({}, st.slots[fmt][id] || {}, v); }
+  const R = await BannerEngine.render(document.getElementById('c'), model, fmt, st);
+  if (q.get('copy') === '1') {
+    const c = R.copy, el = document.createElement('div');
+    el.className = 'copy';
+    Object.assign(el.style, { left: c.x * R.W + 'px', top: c.y * R.H + 'px', width: c.w * R.W + 'px', height: c.h * R.H + 'px', fontSize: (fmt === 'desktop' ? 22 : 34) + 'px', color: tone === 'dark' ? '#fff' : pal.primary });
+    el.innerHTML = `<h1 style="font-size:${fmt === 'desktop' ? 3.1 : 2.6}em">Home for the holidays, done right.</h1><p>Wishing your family a Merry Christmas from all of us on the crew.</p><a style="background:${pal.secondary};color:#fff">Get a Free Estimate</a>`;
+    document.getElementById('stage').appendChild(el);
+  }
+  document.title = 'done';
+})();
+</script>
+</body>
+</html>

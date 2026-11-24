@@ -1,0 +1,855 @@
+<title>Christmas Banner Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+  /* Layout: graphite review bench. Stage on the left carries the color; the control rail on the right stays quiet. */
+  :root {
+    --bench: #17171a;
+    --panel: #1f1f23;
+    --raise: #2a2a2f;
+    --line: #34343a;
+    --ink: #ecebe7;
+    --ink-2: #b1afa9;
+    --ink-3: #8f8d87;
+    --mark: #e9a25a;
+    --warn: #f0c36a;
+    --ui: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bench); color: var(--ink); font-family: var(--ui); font-size: 14px; line-height: 1.45;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 48px; }
+  ::selection { background: var(--mark); color: #1b1408; }
+  .wrap { max-width: 1560px; margin: 0 auto; }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--mark); outline-offset: 2px; }
+
+  header.top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; padding-block: 24px 16px; border-bottom: 1px solid var(--line); }
+  .brand { font-weight: 800; font-stretch: 112%; font-size: 1.3rem; letter-spacing: -0.01em; margin: 0; }
+  .brand span { color: var(--mark); }
+  .meta { color: var(--ink-3); font-size: 0.82rem; margin: 0; }
+
+  nav.niches { display: flex; gap: 4px; overflow-x: auto; padding-block: 12px; scrollbar-width: thin; }
+  nav.niches button { flex: none; font-size: 0.84rem; font-weight: 600; font-stretch: 92%; color: var(--ink-2); background: transparent; border: 1px solid transparent; border-radius: 999px; padding: 6px 14px; }
+  nav.niches button[aria-current="true"] { color: var(--ink); border-color: var(--line); background: var(--panel); }
+  nav.niches button:disabled { color: var(--ink-3); cursor: default; }
+  nav.niches small { font-weight: 500; color: var(--ink-3); margin-left: 6px; font-variant-numeric: tabular-nums; }
+
+  .head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px 40px; padding-block: 14px 20px; }
+  .head h1 { margin: 0; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 800; font-stretch: 108%; letter-spacing: -0.02em; line-height: 1.05; text-wrap: balance; }
+  .head h1 em { font-style: normal; color: var(--ink-3); font-weight: 600; font-stretch: 85%; margin-right: 0.35em; font-variant-numeric: tabular-nums; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+  .tag { font-size: 0.76rem; color: var(--ink-2); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; }
+
+  .models { display: flex; gap: 8px; overflow-x: auto; padding-block: 2px 18px; scrollbar-width: thin; }
+  .models button { flex: none; display: flex; flex-direction: column; gap: 6px; width: 168px; padding: 6px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; text-align: left; color: var(--ink-2); }
+  .models button:hover { border-color: #4a4a52; color: var(--ink); }
+  .models button[aria-current="true"] { border-color: var(--mark); color: var(--ink); }
+  .models canvas { width: 100%; aspect-ratio: 1920 / 800; border-radius: 4px; background: #0e0e10; display: block; }
+  .models b { font-size: 0.78rem; font-weight: 700; line-height: 1.2; }
+  .models b em { font-style: normal; color: var(--ink-3); font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
+  .models small { font-size: 0.7rem; color: var(--ink-3); }
+  .nophoto { font-size: 0.84rem; color: var(--ink-2); border: 1px dashed var(--line); border-radius: 8px; padding: 12px; margin: 0; }
+  .seg { display: inline-flex; flex-wrap: wrap; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 3px; gap: 2px; }
+  .seg button { font-size: 0.82rem; font-weight: 600; color: var(--ink-2); background: transparent; border: 0; border-radius: 6px; padding: 6px 11px; display: inline-flex; align-items: center; gap: 7px; }
+  .seg button[aria-pressed="true"] { background: var(--raise); color: var(--ink); box-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  .sw { display: inline-flex; border-radius: 3px; overflow: hidden; box-shadow: inset 0 0 0 1px rgba(255,255,255,.15); }
+  .sw i { width: 11px; height: 13px; display: block; }
+
+  .work { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 24px; align-items: start; }
+  @media (max-width: 1100px) { .work { grid-template-columns: minmax(0, 1fr); } }
+  .stage { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+  .stage-top { display: flex; flex-wrap: wrap; gap: 14px 22px; align-items: center; justify-content: space-between; }
+  .row2 { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px; align-items: start; }
+  @media (max-width: 700px) { .row2 { grid-template-columns: minmax(0, 1fr); } }
+  figure { margin: 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  figcaption { display: flex; justify-content: space-between; gap: 12px; font-size: 0.78rem; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+  figcaption b { color: var(--ink-2); font-weight: 600; }
+  .frame { position: relative; container-type: inline-size; border-radius: 6px; overflow: hidden; box-shadow: 0 18px 50px -20px rgba(0,0,0,.7), 0 0 0 1px var(--line); }
+  .frame canvas { display: block; width: 100%; height: auto; }
+  .frame.desk { aspect-ratio: 1920 / 800; }
+  .frame.mob { aspect-ratio: 1080 / 1350; }
+  .frame .busy { position: absolute; right: 10px; top: 10px; color: var(--ink); font-size: 0.75rem; background: rgba(14,14,16,.7); border-radius: 4px; padding: 3px 8px; }
+  .frame .busy[hidden] { display: none !important; }
+
+  /* sample headline: preview only, never part of an export */
+  .sample { position: absolute; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; gap: 1.2cqw; pointer-events: none; }
+  .mob .sample { gap: 2.6cqw; padding-block: 6cqw 4cqw; justify-content: safe center; }
+  .sample h2 { margin: 0; letter-spacing: -0.02em; line-height: 1.04; text-wrap: balance; }
+  .sample p { margin: 0; line-height: 1.4; max-width: 34ch; }
+  .sample span { align-self: flex-start; margin-top: 0.5em; line-height: 1.1; white-space: nowrap; }
+
+  /* text panel */
+  textarea { width: 100%; min-width: 0; resize: vertical; background: var(--bench); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font: inherit; color: inherit; line-height: 1.35; }
+  select { width: 100%; background: var(--bench); border: 1px solid var(--line); border-radius: 6px; padding: 7px 8px; }
+  .tx-grid { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; }
+  .sub { border: 1px solid var(--line); border-radius: 8px; background: var(--bench); }
+  .sub > summary { list-style: none; padding: 9px 12px; font-size: 0.84rem; font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; }
+  .sub > summary::-webkit-details-marker { display: none; }
+  .sub > summary small { color: var(--ink-3); font-weight: 500; }
+  .sub .in { padding: 4px 12px 12px; display: flex; flex-direction: column; gap: 10px; }
+  .auto-col { display: grid; grid-template-columns: 38px minmax(0, 1fr); gap: 8px; align-items: center; font-size: 0.8rem; color: var(--ink-2); }
+  .auto-col input[type=color] { width: 38px; height: 28px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: none; }
+
+  .notes { display: flex; flex-direction: column; gap: 12px; color: var(--ink-2); font-size: 0.86rem; min-width: 0; }
+  .notes h3 { margin: 0; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .notes p { margin: 0; max-width: 64ch; }
+  .credit { font-size: 0.76rem; color: var(--ink-3); }
+
+  /* control rail */
+  .rail { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 12px); max-height: calc(100vh - 24px); overflow-y: auto; display: flex; flex-direction: column; gap: 2px; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+  @media (max-width: 1100px) { .rail { position: static; max-height: none; } }
+  .sec { border-bottom: 1px solid var(--line); }
+  .sec:last-child { border-bottom: 0; }
+  .sec > summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 13px 16px; font-weight: 700; font-stretch: 104%; font-size: 0.95rem; cursor: pointer; }
+  .sec > summary::-webkit-details-marker { display: none; }
+  .sec > summary::after { content: ""; width: 7px; height: 7px; border-right: 1.5px solid var(--ink-3); border-bottom: 1.5px solid var(--ink-3); transform: rotate(45deg); transition: transform .2s ease-out; }
+  .sec[open] > summary::after { transform: rotate(-135deg); }
+  .sec > summary small { margin-left: auto; font-weight: 500; font-size: 0.78rem; color: var(--ink-3); }
+  .body { padding: 0 16px 16px; display: flex; flex-direction: column; gap: 14px; }
+  .lbl { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .hint { font-size: 0.78rem; color: var(--ink-3); margin: 0; }
+  .warn { font-size: 0.8rem; color: var(--warn); margin: 0; }
+  .warn[hidden] { display: none !important; }
+
+  .colorrow { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 10px; align-items: center; }
+  .colorrow input[type=color] { width: 44px; height: 36px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: none; cursor: pointer; }
+  .colorrow input[type=color]::-webkit-color-swatch-wrapper { padding: 3px; }
+  .colorrow input[type=color]::-webkit-color-swatch { border: 0; border-radius: 3px; }
+  input[type=text] { width: 100%; min-width: 0; background: var(--bench); border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; font-variant-numeric: tabular-nums; }
+  input[type=text][aria-invalid="true"] { border-color: #d0674a; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .colrow { display: flex; align-items: center; gap: 8px; margin: 4px 0; font-size: 0.82rem; color: var(--ink-2); }
+  .colrow span { flex: 1; }
+  .colrow input[type=color] { width: 38px; height: 28px; padding: 0; border: 1px solid var(--line); border-radius: 6px; background: none; }
+  .chip { display: inline-flex; align-items: center; gap: 7px; background: var(--bench); border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; font-size: 0.8rem; font-weight: 600; color: var(--ink-2); }
+  .chip:hover { color: var(--ink); border-color: #4a4a52; }
+  .chip[aria-pressed="true"] { color: var(--ink); border-color: var(--mark); }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--raise); border: 1px solid var(--line); border-radius: 6px; padding: 8px 12px; font-weight: 600; font-size: 0.84rem; color: var(--ink); }
+  .btn:hover { border-color: #4a4a52; }
+  .btn.primary { background: var(--mark); color: #1b1408; border-color: transparent; }
+  .btn.primary:hover { filter: brightness(1.06); }
+  .btn:disabled { opacity: .5; cursor: default; }
+  .btns { display: flex; flex-wrap: wrap; gap: 8px; }
+  .file { position: relative; overflow: hidden; }
+  .file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+  .logo-sw { display: flex; flex-wrap: wrap; gap: 8px; }
+  .logo-sw .pick { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .logo-sw .dot { width: 34px; height: 34px; border-radius: 6px; box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); }
+  .logo-sw .pick div { display: flex; gap: 3px; }
+  .logo-sw .pick button { font-size: 0.68rem; font-weight: 700; background: var(--bench); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px; color: var(--ink-2); }
+  .logo-sw .pick button:hover { color: var(--ink); }
+
+  .range { display: grid; grid-template-columns: minmax(0, 1fr) 46px; gap: 10px; align-items: center; }
+  .range label { grid-column: 1 / -1; font-size: 0.8rem; color: var(--ink-2); }
+  .range output { font-size: 0.76rem; color: var(--ink-3); text-align: right; font-variant-numeric: tabular-nums; }
+  input[type=range] { width: 100%; accent-color: var(--mark); }
+
+  .slot { border: 1px solid var(--line); border-radius: 8px; background: var(--bench); }
+  .slot > summary { list-style: none; display: grid; grid-template-columns: auto 34px minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 7px 10px; cursor: pointer; }
+  .slot > summary::-webkit-details-marker { display: none; }
+  .slot > summary .nm { font-size: 0.82rem; font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .slot > summary .th { width: 34px; height: 34px; object-fit: contain; }
+  .slot[data-off="true"] > summary .th, .slot[data-off="true"] > summary .nm { opacity: .4; }
+  .slot > summary input[type=checkbox] { width: 16px; height: 16px; accent-color: var(--mark); }
+  .slot > summary .adj { font-size: 0.72rem; color: var(--ink-3); }
+  .slot .in { padding: 4px 10px 12px; display: flex; flex-direction: column; gap: 10px; }
+  .thumbs { display: grid; grid-template-columns: repeat(auto-fill, minmax(46px, 1fr)); gap: 4px; }
+  .thumbs button { aspect-ratio: 1; padding: 4px; background: var(--panel); border: 1px solid var(--line); border-radius: 6px; }
+  .thumbs button[aria-pressed="true"] { border-color: var(--mark); background: var(--raise); }
+  .thumbs img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
+  .gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .gallery button { position: relative; padding: 0; border: 2px solid transparent; border-radius: 7px; overflow: hidden; background: var(--bench); aspect-ratio: 16 / 10; }
+  .gallery button img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gallery button[aria-pressed="true"] { border-color: var(--mark); }
+  .gallery button span { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 6px 4px; font-size: 0.68rem; font-weight: 600; text-align: left; color: #fff; background: linear-gradient(transparent, rgba(0,0,0,.75)); }
+  .gallery .up { display: grid; place-items: center; border: 1px dashed var(--line); color: var(--ink-2); font-size: 0.76rem; font-weight: 600; aspect-ratio: 16 / 10; border-radius: 7px; position: relative; overflow: hidden; cursor: pointer; text-align: center; padding: 4px; }
+  .gallery .up:hover { color: var(--ink); border-color: #4a4a52; }
+  .gallery .up input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+  .check { display: flex; align-items: center; gap: 8px; font-size: 0.84rem; color: var(--ink-2); }
+  .check input { width: 16px; height: 16px; accent-color: var(--mark); }
+  .kind { font-size: 0.66rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-3); border: 1px solid var(--line); border-radius: 3px; padding: 0 4px; }
+  .presets { display: flex; flex-direction: column; gap: 6px; }
+  .preset { display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; gap: 10px; align-items: center; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bench); }
+  .preset b { font-size: 0.86rem; font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .preset small { display: block; font-size: 0.72rem; color: var(--ink-3); }
+  .preset .x { background: none; border: 0; color: var(--ink-3); font-size: 0.78rem; padding: 4px; }
+  .preset .x:hover { color: #e88a6c; }
+  .empty { font-size: 0.82rem; color: var(--ink-3); border: 1px dashed var(--line); border-radius: 8px; padding: 12px; margin: 0; }
+  .toast { position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 20px); transform: translate(-50%, 20px); background: var(--ink); color: var(--bench); font-weight: 600; font-size: 0.86rem; padding: 10px 16px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,.4); opacity: 0; transition: opacity .2s ease-out, transform .2s ease-out; pointer-events: none; z-index: 20; }
+  .toast.on { opacity: 1; transform: translate(-50%, 0); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <p class="brand">Christmas <span>Banner Studio</span></p>
+    <p class="meta">Hero sem texto · 1920×800 + 1080×1350 · Natal 25/12</p>
+  </header>
+
+  <nav class="niches" id="niches" aria-label="Nichos"></nav>
+
+  <section class="head">
+    <div>
+      <h1 id="title"></h1>
+      <div class="tags" id="tags"></div>
+    </div>
+  </section>
+  <nav class="models" id="models" aria-label="Modelos do nicho"></nav>
+
+  <div class="work">
+    <div class="stage">
+      <div class="stage-top">
+        <div class="seg" role="group" aria-label="Tom da área de texto">
+          <button id="tone-dark" data-tone="dark" aria-pressed="true">Escuro · texto branco</button>
+          <button id="tone-light" data-tone="light" aria-pressed="false">Claro · texto escuro</button>
+        </div>
+        <div class="seg" role="group" aria-label="Título de exemplo">
+          <button id="copy-on" data-copy="1" aria-pressed="true">Com título de exemplo</button>
+          <button id="copy-off" data-copy="0" aria-pressed="false">Sem título</button>
+        </div>
+      </div>
+      <figure>
+        <div class="frame desk" id="f-desktop"><canvas id="c-desktop" width="1920" height="800"></canvas><div class="busy" id="b-desktop">Renderizando…</div></div>
+        <figcaption><span><b>Desktop</b> 1920 × 800</span><span>área de texto à esquerda</span></figcaption>
+      </figure>
+      <div class="row2">
+        <figure>
+          <div class="frame mob" id="f-mobile"><canvas id="c-mobile" width="1080" height="1350"></canvas><div class="busy" id="b-mobile">Renderizando…</div></div>
+          <figcaption><span><b>Mobile</b> 1080 × 1350</span><span>texto no topo</span></figcaption>
+        </figure>
+        <div class="notes">
+          <h3>Ideia do modelo</h3>
+          <p id="idea"></p>
+          <h3>Status</h3>
+          <p id="status"></p>
+          <p class="credit" id="credit"></p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="rail" aria-label="Controles">
+      <details class="sec" open>
+        <summary>Texto do banner <small>só na prévia</small></summary>
+        <div class="body" id="tx">
+          <div class="field"><label class="lbl" for="tx-head">Título</label><textarea id="tx-head" rows="2" placeholder="Título padrão do nicho"></textarea></div>
+          <div class="field"><label class="lbl" for="tx-sub">Subtítulo</label><textarea id="tx-sub" rows="3" placeholder="Subtítulo padrão do nicho"></textarea></div>
+          <div class="field"><label class="lbl" for="tx-cta">Botão</label><input type="text" id="tx-cta" placeholder="Get a Free Estimate"></div>
+          <div id="tx-styles"></div>
+          <div class="btns"><button class="btn" id="tx-reset">Voltar ao texto e estilo padrão</button></div>
+          <p class="hint">O texto aparece só na prévia, para conferir com a fonte e o botão do site do cliente. Os arquivos exportados saem sem texto. Fica salvo neste navegador e nos presets de cliente.</p>
+        </div>
+      </details>
+
+      <details class="sec" open>
+        <summary>Foto e cena <small id="ph-current"></small></summary>
+        <div class="body">
+          <div class="gallery" id="gallery"></div>
+          <p class="hint">Toque numa foto para trocar a foto do banner; cada uma já vem enquadrada. Para usar a foto do trabalho do cliente, toque em Enviar foto (horizontal, 2000 px ou mais).</p>
+          <p class="hint" id="photo-name"></p>
+          <label class="check"><input type="checkbox" id="ph-flip"> Espelhar foto (obra para o outro lado)</label>
+          <div id="photo-ctl"></div>
+          <div id="scene-ctl"></div>
+          <button class="btn" id="scene-reset">Restaurar enquadramento e céu</button>
+        </div>
+      </details>
+
+      <details class="sec" open>
+        <summary>Cores da marca</summary>
+        <div class="body">
+          <div class="field">
+            <span class="lbl">Primária · céu e base</span>
+            <div class="colorrow"><input type="color" id="pri-pick" aria-label="Escolher cor primária"><input type="text" id="pri-hex" maxlength="7" spellcheck="false" aria-label="Hex da cor primária"></div>
+          </div>
+          <div class="field">
+            <span class="lbl">Secundária · brilho e botão</span>
+            <div class="colorrow"><input type="color" id="sec-pick" aria-label="Escolher cor secundária"><input type="text" id="sec-hex" maxlength="7" spellcheck="false" aria-label="Hex da cor secundária"></div>
+          </div>
+          <p class="warn" id="tone-warn" hidden></p>
+          <div class="field">
+            <span class="lbl">Paletas de teste</span>
+            <div class="chips" id="demo-pals"></div>
+          </div>
+          <div class="field">
+            <span class="lbl">Conta-gotas do logo</span>
+            <div class="btns"><label class="btn file">Enviar logo do cliente<input type="file" id="logo-file" accept="image/*"></label></div>
+            <div class="logo-sw" id="logo-sw"></div>
+            <p class="hint" id="logo-hint">As cores principais do logo aparecem aqui. Toque em P para usar como primária ou S para secundária.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="sec" open>
+        <summary>Elementos <small id="el-count"></small></summary>
+        <div class="body">
+          <div class="field">
+            <span class="lbl">Presets de elementos</span>
+            <div class="chips" id="el-presets"></div>
+            <p class="hint">Trocam os elementos de todas as posições, no desktop e no mobile.</p>
+          </div>
+          <div class="field">
+            <span class="lbl">Ajuste fino (posição, foto e céu) em</span>
+            <div class="seg" role="group" aria-label="Formato em edição">
+              <button data-edit="desktop" id="edit-desktop" aria-pressed="true">Desktop</button>
+              <button data-edit="mobile" id="edit-mobile" aria-pressed="false">Mobile</button>
+            </div>
+          </div>
+          <div class="field" id="slots"></div>
+        </div>
+      </details>
+
+      <details class="sec" open>
+        <summary>Exportar</summary>
+        <div class="body">
+          <div class="field">
+            <span class="lbl">Nome do cliente (vai no arquivo)</span>
+            <input type="text" id="client" placeholder="ex.: Miller Builders" autocomplete="off">
+          </div>
+          <div class="btns">
+            <button class="btn primary" id="exp-zip">Baixar tudo (.zip)</button>
+          </div>
+          <p class="hint">O ZIP traz desktop e mobile nos tons escuro e claro, em PNG e WebP (8 arquivos).</p>
+          <div class="btns">
+            <button class="btn" id="exp-d-png">Desktop PNG</button>
+            <button class="btn" id="exp-m-png">Mobile PNG</button>
+            <button class="btn" id="exp-d-webp">Desktop WebP</button>
+            <button class="btn" id="exp-m-webp">Mobile WebP</button>
+          </div>
+          <p class="hint">Os arquivos avulsos saem no tom selecionado, sem o título de exemplo.</p>
+          <p class="warn" id="exp-warn" hidden></p>
+        </div>
+      </details>
+
+      <details class="sec" open>
+        <summary>Presets de clientes <small id="pr-count"></small></summary>
+        <div class="body">
+          <div class="btns"><button class="btn" id="pr-save">Salvar como preset do cliente</button></div>
+          <p class="hint">Salva cores, tom, foto, elementos e ajustes com o nome do cliente. A equipe vê os mesmos presets.</p>
+          <div class="presets" id="pr-list"><p class="empty">Carregando presets…</p></div>
+        </div>
+      </details>
+    </aside>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="engine.js"></script>
+<script src="elements.js"></script>
+<script src="scenes.js"></script>
+<!-- modelos de Natal: adicione aqui (e em render.html) cada models/<nicho>-shared.js e models/<nicho>-0N.js -->
+<script>
+(function () {
+  const E = window.BannerEngine;
+  const NICHES = ['Construction', 'Cleaning', 'Masonry/Landscape', 'Painting', 'General Services', 'Siding/Roofing', 'Drywall', 'Flooring'];
+  const IDEAS = {
+    // 'nicho-01': 'Descrição da ideia do modelo, em português, para quem aprova.',
+  };
+  const CAT = window.BannerElementsById;
+  const KIND = { leaf: 'Folha', branch: 'Galho', ground: 'Chão', cluster: 'Arranjo', flat: 'Mesa', wc: 'Aquarela', bubble: 'Bolha', hang: 'Pendurado' };
+  const kindsOf = x => [].concat(x);
+  const kindLabel = k => KIND[kindsOf(k)[0]] || '';
+  const fits = (e, s) => (e.kinds || [e.kind]).some(k => kindsOf(s.kind).includes(k));
+  const elName = id => (CAT[id] && CAT[id].name) || id;
+  const NUDGE = { dx: [-0.08, 0.08, 0.002, 'Horizontal'], dy: [-0.08, 0.08, 0.002, 'Vertical'], scale: [0.6, 1.5, 0.01, 'Tamanho'], drot: [-45, 45, 1, 'Giro'] };
+  const FMTS = ['desktop', 'mobile'];
+  const PER_FMT = ['horizon', 'veil', 'split'];
+  const $ = id => document.getElementById(id);
+  const clone = o => JSON.parse(JSON.stringify(o));
+
+  const models = Object.values(window.BannerModels || {});
+  window.BannerModels = window.BannerModels || {};
+  let model = models[0];
+  // nenhum modelo de Natal ainda: mostra um estado vazio em vez de quebrar
+  if (!model) {
+    $('title').textContent = 'Nenhum modelo de Natal ainda';
+    $('niches').innerHTML = NICHES.map(n => `<button disabled>${n}<small>0</small></button>`).join('');
+    document.querySelector('.work').innerHTML = '<p class="empty">Os modelos de Natal entram em app/models/ e são carregados por script em index.html e render.html. O motor, a exportação, as cores e os presets de cliente já estão prontos.</p>';
+    return;
+  }
+  const blank = () => ({ primary: model.palettes[0].primary, secondary: model.palettes[0].secondary, tone: model.defaultTone || 'dark', photoId: model.defaultPhoto || (model.photos && model.photos[0] && model.photos[0].id) || null, photoSrc: null, photoAsset: null, photoName: null,
+    photo: { desktop: {}, mobile: {} }, slots: { desktop: {}, mobile: {} }, params: { desktop: {}, mobile: {} } });
+  let S = blank();
+  const ui = { copy: true, edit: 'desktop' };
+  let caps = { db: null, assets: null, downloads: null };
+
+  /* ---------- toast ---------- */
+  let tt;
+  function toast(msg) { const t = $('toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('on'), 2600); }
+
+  /* ---------- rendering ---------- */
+  const pending = new Set(); let raf = 0, running = false;
+  function queue(fmts = FMTS) { fmts.forEach(f => pending.add(f)); if (!raf) raf = setTimeout(pump, 120); }
+  async function pump() {
+    raf = 0; if (running) { raf = setTimeout(pump, 80); return; }
+    running = true;
+    const todo = [...pending]; pending.clear();
+    for (const fmt of todo) {
+      $('b-' + fmt).hidden = false;
+      await new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
+      try { const R = await E.render($('c-' + fmt), model, fmt, S); sample(fmt, R); }
+      catch (err) { console.error(err); toast('Não foi possível renderizar o ' + fmt + ': ' + err.message); }
+      $('b-' + fmt).hidden = true;
+    }
+    running = false;
+    if (pending.size) pump();
+  }
+  /* ---------- sample text: editable copy and typography (preview only) ---------- */
+  const FONTS = ['Archivo', 'Inter', 'Montserrat', 'Poppins', 'Roboto', 'Open Sans', 'Lato', 'Nunito', 'Raleway', 'Work Sans', 'Barlow', 'Josefin Sans', 'Oswald', 'Bebas Neue', 'Playfair Display', 'Lora', 'Merriweather', 'Libre Baskerville'];
+  const SERIF = ['Playfair Display', 'Lora', 'Merriweather', 'Libre Baskerville'];
+  const fontStack = f => `'${f}', ${SERIF.includes(f) ? 'Georgia, serif' : 'Arial, sans-serif'}`;
+  const TX_DEFAULT = {
+    head: '', sub: '', cta: '',
+    h: { font: 'Archivo', size: 100, weight: 800, italic: false, upper: false, color: '' },
+    p: { font: 'Archivo', size: 100, weight: 500, italic: false, upper: false, color: '' },
+    b: { font: 'Archivo', size: 100, weight: 700, italic: false, upper: false, bg: '', color: '', radius: 0.25, padX: 1.5, padY: 0.95, border: 0, borderColor: '', show: true },
+  };
+  let TX = clone(TX_DEFAULT);
+  try { const saved = JSON.parse(localStorage.getItem('bannerText') || 'null'); if (saved) TX = Object.assign(clone(TX_DEFAULT), saved, { h: Object.assign(clone(TX_DEFAULT.h), saved.h), p: Object.assign(clone(TX_DEFAULT.p), saved.p), b: Object.assign(clone(TX_DEFAULT.b), saved.b) }); } catch (e) {}
+  const saveTX = () => { try { localStorage.setItem('bannerText', JSON.stringify(TX)); } catch (e) {} };
+  const nicheText = () => model.niche === 'Cleaning' ? ['Clean, calm and ready for Christmas.', 'Wishing your family a Merry Christmas from our cleaning crew.'] : model.niche === 'Masonry/Landscape' ? ['Ready for the holidays, outside too.', 'Wishing your family a Merry Christmas from all of us on the crew.'] : model.niche === 'Painting' ? ['Fresh walls for the holidays.', 'Wishing your family a Merry Christmas from all of us on the crew.'] : ['Home for the holidays, done right.', 'Wishing your family a Merry Christmas from all of us on the crew.'];
+  const BASE = { desktop: { h: 3.55, p: 1.15, b: 1.05 }, mobile: { h: 7.8, p: 3.2, b: 3 } };
+  const typo = (t, size) => `font-family:${fontStack(t.font)};font-size:${size}cqw;font-weight:${t.weight};font-style:${t.italic ? 'italic' : 'normal'};text-transform:${t.upper ? 'uppercase' : 'none'};${t.upper ? 'letter-spacing:0.04em;' : ''}`;
+  function sample(fmt, R) {
+    const f = $('f-' + fmt);
+    f.querySelector('.sample')?.remove();
+    if (!ui.copy) return;
+    const c = R.copy, el = document.createElement('div'), B = BASE[fmt], ink = S.tone === 'dark' ? '#fff' : S.primary;
+    el.className = 'sample'; el.setAttribute('aria-hidden', 'true');
+    Object.assign(el.style, { left: c.x * 100 + '%', top: c.y * 100 + '%', width: c.w * 100 + '%', height: c.h * 100 + '%', color: ink });
+    // boxed copy zones (a card or panel behind the text) carry their own inner padding
+    if (c.pad) el.style.padding = c.pad[0] + 'cqw ' + c.pad[1] + 'cqw';
+    const T = nicheText(), b = TX.b, bg = b.bg || S.secondary, bcol = b.color || (E.luma(E.hex(bg)) > 0.62 ? '#161616' : '#fff');
+    const esc = s => escapeHtml(s).replace(/\n/g, '<br>');
+    el.innerHTML = `<h2 style="${typo(TX.h, B.h * TX.h.size / 100)}${TX.h.color ? 'color:' + TX.h.color + ';' : ''}">${esc(TX.head || T[0])}</h2>`
+      + `<p style="${typo(TX.p, B.p * TX.p.size / 100)}${TX.p.color ? 'color:' + TX.p.color + ';' : ''}">${esc(TX.sub || T[1])}</p>`
+      + (b.show ? `<span style="${typo(b, B.b * b.size / 100)}background:${bg};color:${bcol};border-radius:${b.radius}em;padding:${b.padY}em ${b.padX}em;${b.border ? `border:${b.border * 0.06}em solid ${b.borderColor || bcol};` : ''}">${esc(TX.cta || 'Get a Free Estimate')}</span>` : '');
+    f.appendChild(el);
+  }
+  function resample() { FMTS.forEach(fmt => { const c = $('c-' + fmt); const R = E.resolve(model, fmt, S); sample(fmt, R); }); }
+  function buildText() {
+    $('tx-head').value = TX.head; $('tx-sub').value = TX.sub; $('tx-cta').value = TX.cta;
+    const fontSel = (id, v) => `<div class="field"><label class="lbl" for="${id}">Fonte</label><select id="${id}">${FONTS.map(f => `<option value="${f}" ${f === v ? 'selected' : ''} style="font-family:${fontStack(f)}">${f}</option>`).join('')}</select></div>`;
+    const weight = (k, v) => `<div class="field"><span class="lbl">Peso</span><div class="chips" data-tx="${k}.weight">${[[400, 'Normal'], [500, 'Médio'], [600, 'Semi'], [700, 'Bold'], [800, 'Extra'], [900, 'Black']].map(([w, l]) => `<button class="chip" data-v="${w}" aria-pressed="${+v === w}">${l}</button>`).join('')}</div></div>`;
+    const toggles = (k, t) => `<div class="chips"><button class="chip" data-tg="${k}.italic" aria-pressed="${t.italic}">Itálico</button><button class="chip" data-tg="${k}.upper" aria-pressed="${t.upper}">MAIÚSCULAS</button></div>`;
+    const range = (k, label, mn, mx, st, v, fmt = x => x) => `<div class="range"><label for="tx-${k}">${label}</label><input type="range" id="tx-${k}" data-tr="${k}" min="${mn}" max="${mx}" step="${st}" value="${v}"><output>${fmt(v)}</output></div>`;
+    const color = (k, label, v, auto) => `<div class="field"><span class="lbl">${label}</span><div class="auto-col"><input type="color" data-tc="${k}" value="${v || auto}"><span>${v ? v : 'Automática'} ${v ? `<button class="chip" data-tauto="${k}">Automática</button>` : ''}</span></div></div>`;
+    const ink = S.tone === 'dark' ? '#ffffff' : S.primary, b = TX.b, bg = b.bg || S.secondary;
+    $('tx-styles').innerHTML = `
+      <details class="sub" open><summary>Título <small>${TX.h.font} · ${TX.h.weight}</small></summary><div class="in">
+        ${fontSel('tx-h-font', TX.h.font)}${range('h.size', 'Tamanho', 50, 170, 1, TX.h.size, v => v + '%')}${weight('h', TX.h.weight)}${toggles('h', TX.h)}${color('h.color', 'Cor', TX.h.color, ink)}
+      </div></details>
+      <details class="sub"><summary>Subtítulo <small>${TX.p.font} · ${TX.p.weight}</small></summary><div class="in">
+        ${fontSel('tx-p-font', TX.p.font)}${range('p.size', 'Tamanho', 60, 180, 1, TX.p.size, v => v + '%')}${weight('p', TX.p.weight)}${toggles('p', TX.p)}${color('p.color', 'Cor', TX.p.color, ink)}
+      </div></details>
+      <details class="sub"><summary>Botão <small>${b.show ? b.font : 'oculto'}</small></summary><div class="in">
+        <label class="check"><input type="checkbox" id="tx-b-show" ${b.show ? 'checked' : ''}> Mostrar botão</label>
+        ${fontSel('tx-b-font', b.font)}${range('b.size', 'Tamanho', 60, 180, 1, b.size, v => v + '%')}${weight('b', b.weight)}${toggles('b', b)}
+        ${color('b.bg', 'Cor do botão', b.bg, S.secondary)}${color('b.color', 'Cor do texto', b.color, E.luma(E.hex(bg)) > 0.62 ? '#161616' : '#ffffff')}
+        ${range('b.radius', 'Arredondamento', 0, 3, 0.05, b.radius, v => (+v >= 2.5 ? 'pílula' : (+v).toFixed(2)))}
+        ${range('b.padX', 'Espaço interno lateral', 0.4, 4, 0.05, b.padX, v => (+v).toFixed(2))}
+        ${range('b.padY', 'Espaço interno vertical', 0.3, 2.5, 0.05, b.padY, v => (+v).toFixed(2))}
+        ${range('b.border', 'Borda', 0, 6, 1, b.border, v => v + '')}${b.border ? color('b.borderColor', 'Cor da borda', b.borderColor, b.color || '#ffffff') : ''}
+      </div></details>`;
+  }
+  const setPath = (path, v) => { const [k, f] = path.split('.'); TX[k][f] = v; };
+  const txChanged = (rebuild = false) => { saveTX();
+    if (document.fonts) Promise.all(['h', 'p', 'b'].map(k => document.fonts.load(`${TX[k].weight} 24px "${TX[k].font}"`).catch(() => null))).then(() => resample()); if (rebuild) { const open = [...$('tx-styles').querySelectorAll('details')].map(d => d.open); buildText(); $('tx-styles').querySelectorAll('details').forEach((d, i) => { d.open = open[i]; }); } resample(); };
+  ['head', 'sub', 'cta'].forEach(k => $('tx-' + k).addEventListener('input', e => { TX[k] = e.target.value; txChanged(); }));
+  $('tx-styles').addEventListener('input', e => {
+    const t = e.target;
+    if (t.dataset.tr) { setPath(t.dataset.tr, +t.value); const o = t.parentElement.querySelector('output'); if (o) o.textContent = t.dataset.tr.endsWith('size') ? t.value + '%' : t.dataset.tr === 'b.radius' && +t.value >= 2.5 ? 'pílula' : t.dataset.tr === 'b.border' ? t.value : (+t.value).toFixed(2); txChanged(t.dataset.tr === 'b.border' && (+t.value === 0 || +t.value === 1)); }
+    else if (t.dataset.tc) { setPath(t.dataset.tc, t.value); txChanged(); }
+  });
+  $('tx-styles').addEventListener('change', e => {
+    const t = e.target;
+    if (t.id === 'tx-h-font') { TX.h.font = t.value; txChanged(true); }
+    else if (t.id === 'tx-p-font') { TX.p.font = t.value; txChanged(true); }
+    else if (t.id === 'tx-b-font') { TX.b.font = t.value; txChanged(true); }
+    else if (t.id === 'tx-b-show') { TX.b.show = t.checked; txChanged(true); }
+    else if (t.dataset.tc) txChanged(true);
+  });
+  $('tx-styles').addEventListener('click', e => {
+    const w = e.target.closest('[data-tx] button'); if (w) { setPath(w.parentElement.dataset.tx, +w.dataset.v); txChanged(true); return; }
+    const g = e.target.closest('button[data-tg]'); if (g) { const [k, f] = g.dataset.tg.split('.'); TX[k][f] = !TX[k][f]; txChanged(true); return; }
+    const a = e.target.closest('button[data-tauto]'); if (a) { setPath(a.dataset.tauto, ''); txChanged(true); }
+  });
+  $('tx-reset').addEventListener('click', () => { TX = clone(TX_DEFAULT); buildText(); txChanged(); toast('Texto e estilo voltaram ao padrão.'); });
+  // fonts arrive asynchronously: redraw the preview once they are ready
+  if (document.fonts) document.fonts.ready.then(() => resample());
+
+  /* ---------- header ---------- */
+  function buildNiches() {
+    $('niches').innerHTML = NICHES.map(n => { const c = models.filter(m => m.niche === n).length; return `<button data-niche="${n}" ${n === model.niche ? 'aria-current="true"' : ''} ${c ? '' : 'disabled'}>${n}<small>${c}</small></button>`; }).join('');
+  }
+  $('niches').addEventListener('click', e => { const b = e.target.closest('button[data-niche]'); if (!b || b.dataset.niche === model.niche) return; const first = models.find(m => m.niche === b.dataset.niche); if (first) switchModel(first.id); });
+  const APPROVED = [];
+  function header() {
+    const idx = model.id.split('-').pop();
+    $('title').innerHTML = `<em>${model.niche} ${idx}</em>${model.name}`;
+    $('tags').innerHTML = [model.style, model.photos && model.photos.length ? 'Foto do trabalho do cliente' : 'Só decoração, sem foto', APPROVED.includes(model.id) ? 'Aprovado' : 'Aguardando aprovação'].map(t => `<span class="tag">${t}</span>`).join('');
+    $('idea').textContent = IDEAS[model.id] || '';
+    $('credit').textContent = model.credit + ' · licença Pexels, uso comercial livre.';
+    $('status').textContent = APPROVED.includes(model.id) ? 'Aprovado. Use à vontade para clientes.' : 'Aguardando aprovação. Comente o que ajustar: elementos, cores, enquadramento ou foto.';
+    $('models').querySelectorAll('button').forEach(b => b.setAttribute('aria-current', String(b.dataset.model === model.id)));
+  }
+  const nicheModels = () => models.filter(m => m.niche === model.niche);
+  function buildStrip() { $('models').innerHTML = nicheModels().map(m => `<button data-model="${m.id}"><canvas width="480" height="200" aria-hidden="true"></canvas><b><em>${m.id.split('-').pop()}</em>${m.name}</b><small>${m.style}</small></button>`).join(''); }
+  buildStrip();
+  async function thumbs() {
+    for (const b of $('models').querySelectorAll('button')) {
+      const m = window.BannerModels[b.dataset.model], c = document.createElement('canvas');
+      try { await E.render(c, m, 'desktop', { tone: m.defaultTone || 'dark', primary: S.primary, secondary: S.secondary }); b.querySelector('canvas').getContext('2d').drawImage(c, 0, 0, 480, 200); } catch (e) { console.error(e); }
+    }
+  }
+  function switchModel(id, keep = true) {
+    const m = window.BannerModels[id]; if (!m || m === model) return;
+    const colors = { primary: S.primary, secondary: S.secondary };
+    const sameNiche = m.niche === model.niche;
+    model = m;
+    S = Object.assign(blank(), keep && sameNiche ? colors : {});
+    if (!sameNiche) { buildNiches(); buildStrip(); setTimeout(thumbs, 300); }
+    header(); buildPals(); buildElPresets(); if (caps.db) renderPresets(allDocs);
+    loadState(S);
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  }
+  $('models').addEventListener('click', e => { const b = e.target.closest('button[data-model]'); if (b) switchModel(b.dataset.model); });
+
+  /* ---------- segmented toggles ---------- */
+  function press(group, btn) { group.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === btn))); }
+  $('tone-dark').parentElement.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; press(b.parentElement, b); S.tone = b.dataset.tone; toneWarn(); queue(); });
+  $('copy-on').parentElement.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; press(b.parentElement, b); ui.copy = b.dataset.copy === '1'; queue(); });
+  $('edit-desktop').parentElement.addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; press(b.parentElement, b); ui.edit = b.dataset.edit; buildSlots(); buildGallery(); buildPhotoCtl(); buildSceneCtl(); });
+
+  /* ---------- colors ---------- */
+  const HEX = /^#?([0-9a-f]{6})$/i;
+  function setColor(which, hex, src) {
+    const m = HEX.exec(hex.trim()); if (!m) return false;
+    const v = '#' + m[1].toLowerCase();
+    S[which] = v;
+    const k = which === 'primary' ? 'pri' : 'sec';
+    if (src !== 'pick') $(k + '-pick').value = v;
+    if (src !== 'hex') $(k + '-hex').value = v;
+    $(k + '-hex').removeAttribute('aria-invalid');
+    markPal(); toneWarn(); queue();
+    return true;
+  }
+  ['pri', 'sec'].forEach(k => {
+    const which = k === 'pri' ? 'primary' : 'secondary';
+    $(k + '-pick').addEventListener('input', e => setColor(which, e.target.value, 'pick'));
+    $(k + '-hex').addEventListener('input', e => { if (!setColor(which, e.target.value, 'hex')) e.target.setAttribute('aria-invalid', 'true'); });
+    $(k + '-hex').addEventListener('blur', e => { e.target.value = S[which]; e.target.removeAttribute('aria-invalid'); });
+  });
+  function buildPals() { $('demo-pals').innerHTML = model.palettes.map((p, i) => `<button class="chip" data-i="${i}" aria-pressed="false"><span class="sw"><i style="background:${p.primary}"></i><i style="background:${p.secondary}"></i></span>${p.name}</button>`).join(''); }
+  $('demo-pals').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const p = model.palettes[+b.dataset.i]; setColor('primary', p.primary); setColor('secondary', p.secondary); });
+  function markPal() { $('demo-pals').querySelectorAll('button').forEach((b, i) => { const p = model.palettes[i]; b.setAttribute('aria-pressed', String(p.primary === S.primary && p.secondary === S.secondary)); }); }
+  function toneWarn() {
+    const L = E.luma(E.hex(S.primary)), w = $('tone-warn');
+    if (S.tone === 'dark' && L > 0.42) { w.hidden = false; w.textContent = 'Primária clara demais para texto branco. Use o tom Claro ou uma primária mais escura.'; }
+    else if (S.tone === 'light' && L > 0.55) { w.hidden = false; w.textContent = 'No tom Claro o título usa a cor primária; esta primária é clara demais para leitura.'; }
+    else w.hidden = true;
+  }
+
+  /* logo eyedropper: dominant colors of the uploaded logo */
+  $('logo-file').addEventListener('change', async e => {
+    const f = e.target.files[0]; if (!f) return;
+    const url = URL.createObjectURL(f);
+    try {
+      const im = await new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; });
+      const c = document.createElement('canvas'), n = 96, k = n / Math.max(im.width, im.height);
+      c.width = Math.max(1, Math.round(im.width * k)); c.height = Math.max(1, Math.round(im.height * k));
+      const g = c.getContext('2d', { willReadFrequently: true }); g.drawImage(im, 0, 0, c.width, c.height);
+      const d = g.getImageData(0, 0, c.width, c.height).data, bins = new Map();
+      for (let i = 0; i < d.length; i += 4) {
+        if (d[i + 3] < 200) continue;
+        const r = d[i], gg = d[i + 1], b = d[i + 2];
+        if (r > 238 && gg > 238 && b > 238) continue; // paper white
+        const key = (r >> 4) << 8 | (gg >> 4) << 4 | (b >> 4);
+        const v = bins.get(key) || [0, 0, 0, 0]; v[0] += r; v[1] += gg; v[2] += b; v[3]++; bins.set(key, v);
+      }
+      const cols = [...bins.values()].sort((a, b) => b[3] - a[3]).map(v => [v[0] / v[3], v[1] / v[3], v[2] / v[3], v[3]]);
+      const picked = [];
+      for (const c2 of cols) { if (picked.every(p => Math.hypot(p[0] - c2[0], p[1] - c2[1], p[2] - c2[2]) > 48)) picked.push(c2); if (picked.length === 6) break; }
+      const hx = c2 => '#' + c2.slice(0, 3).map(v => Math.round(v).toString(16).padStart(2, '0')).join('');
+      $('logo-sw').innerHTML = picked.length ? picked.map(p => `<div class="pick"><span class="dot" style="background:${hx(p)}" title="${hx(p)}"></span><div><button data-c="${hx(p)}" data-t="primary" aria-label="Usar ${hx(p)} como primária">P</button><button data-c="${hx(p)}" data-t="secondary" aria-label="Usar ${hx(p)} como secundária">S</button></div></div>`).join('') : '';
+      $('logo-hint').textContent = picked.length ? `${picked.length} cores encontradas em ${f.name}. Toque em P (primária) ou S (secundária).` : 'Não encontrei cores no logo. Ele é todo branco ou transparente?';
+    } catch (err) { $('logo-hint').textContent = 'Não consegui ler esse arquivo. Envie PNG, JPG, WebP ou SVG.'; }
+    finally { URL.revokeObjectURL(url); e.target.value = ''; }
+  });
+  $('logo-sw').addEventListener('click', e => { const b = e.target.closest('button[data-c]'); if (b) setColor(b.dataset.t, b.dataset.c); });
+
+  /* ---------- elements ---------- */
+  const slotDefs = fmt => model.formats[fmt].slots;
+  const ov = (fmt, id) => (S.slots[fmt][id] = S.slots[fmt][id] || {});
+  function slotState(fmt, s) { const o = S.slots[fmt][s.id] || {}; return { on: o.on !== undefined ? o.on : s.on !== false, el: o.el || s.el, dx: o.dx || 0, dy: o.dy || 0, scale: o.scale || 1, drot: o.drot || 0 }; }
+  function setBoth(id, patch) { FMTS.forEach(f => Object.assign(ov(f, id), patch)); }
+
+  function buildElPresets() { $('el-presets').innerHTML = model.elementPresets.map((p, i) => `<button class="chip" data-i="${i}" aria-pressed="false">${p.name}</button>`).join(''); }
+  $('el-presets').addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    const p = model.elementPresets[+b.dataset.i];
+    Object.entries(p.slots).forEach(([id, el]) => setBoth(id, el ? { on: true, el } : { on: false }));
+    buildSlots(); queue();
+  });
+  function markElPreset() {
+    const cur = slotDefs('desktop').map(s => { const st = slotState('desktop', s); return st.on ? st.el : null; });
+    $('el-presets').querySelectorAll('button').forEach((b, i) => {
+      const p = model.elementPresets[i];
+      b.setAttribute('aria-pressed', String(slotDefs('desktop').every((s, j) => (s.id in p.slots ? (p.slots[s.id] || null) : (s.on === false ? null : s.el)) === cur[j])));
+    });
+    $('el-count').textContent = cur.filter(Boolean).length + ' de ' + cur.length + ' ligados';
+  }
+
+  function buildSlots() {
+    const fmt = ui.edit, wrap = $('slots');
+    const openIds = [...wrap.querySelectorAll('details[open]')].map(d => d.dataset.id);
+    wrap.innerHTML = slotDefs(fmt).map(s => {
+      const st = slotState(fmt, s);
+      const adj = (st.dx || st.dy || st.scale !== 1 || st.drot) ? 'ajustado' : '';
+      return `<details class="slot" data-id="${s.id}" data-off="${!st.on}" ${openIds.includes(s.id) ? 'open' : ''}>
+        <summary><input type="checkbox" id="on-${s.id}" data-on="${s.id}" ${st.on ? 'checked' : ''} aria-label="Mostrar ${s.label}"><img class="th" src="${model.elementPath(st.el)}" alt=""><span class="nm">${s.label}</span><span class="kind">${kindLabel(s.kind)}</span><span class="adj">${adj}</span></summary>
+        <div class="in">
+          <span class="lbl">${kindLabel(s.kind) || 'Elemento'} · ${elName(st.el)}</span>
+          <div class="thumbs">${window.BannerElements.filter(e => fits(e, s)).map(e => `<button data-slot="${s.id}" data-el="${e.id}" aria-pressed="${e.id === st.el}" title="${e.name}"><img src="${model.elementPath(e.id)}" alt="${e.name}" loading="lazy"></button>`).join('')}</div>
+          <span class="lbl">Ajuste fino no ${fmt === 'desktop' ? 'desktop' : 'mobile'}</span>
+          ${Object.entries(NUDGE).map(([k, [mn, mx, step, lab]]) => `<div class="range"><label for="n-${s.id}-${k}">${lab}</label><input type="range" id="n-${s.id}-${k}" data-slot="${s.id}" data-k="${k}" min="${mn}" max="${mx}" step="${step}" value="${st[k]}"><output for="n-${s.id}-${k}">${fmtN(k, st[k])}</output></div>`).join('')}
+          <button class="btn" data-reset="${s.id}">Voltar posição original</button>
+        </div>
+      </details>`;
+    }).join('');
+    markElPreset();
+  }
+  function fmtN(k, v) { v = +v; return k === 'scale' ? Math.round(v * 100) + '%' : k === 'drot' ? Math.round(v) + '°' : (v >= 0 ? '+' : '') + Math.round(v * 1000) / 10; }
+  $('slots').addEventListener('click', e => {
+    const cb = e.target.closest('input[data-on]');
+    if (cb) { e.stopPropagation(); return; }
+    const t = e.target.closest('button[data-el]');
+    if (t) { setBoth(t.dataset.slot, { el: t.dataset.el, on: true }); buildSlots(); queue(); return; }
+    const r = e.target.closest('button[data-reset]');
+    if (r) { const o = ov(ui.edit, r.dataset.reset); delete o.dx; delete o.dy; delete o.scale; delete o.drot; buildSlots(); queue([ui.edit]); }
+  });
+  $('slots').addEventListener('change', e => {
+    const cb = e.target.closest('input[data-on]');
+    if (cb) { setBoth(cb.dataset.on, { on: cb.checked }); buildSlots(); queue(); }
+  });
+  $('slots').addEventListener('input', e => {
+    const r = e.target.closest('input[type=range][data-k]'); if (!r) return;
+    ov(ui.edit, r.dataset.slot)[r.dataset.k] = +r.value;
+    r.nextElementSibling.textContent = fmtN(r.dataset.k, r.value);
+    queue([ui.edit]);
+  });
+
+  /* ---------- photo + scene ---------- */
+  function range(id, label, mn, mx, step, val, fmt) {
+    return `<div class="range"><label for="${id}">${label}</label><input type="range" id="${id}" min="${mn}" max="${mx}" step="${step}" value="${val}"><output for="${id}">${fmt(val)}</output></div>`;
+  }
+  const pct = v => Math.round(v * 100) + '%';
+  function buildPhotoCtl() {
+    if (!(model.photo || (model.photos && model.photos.length))) { $('photo-ctl').innerHTML = ''; return; }
+    const fmt = ui.edit, base = Object.assign({}, model.formats[fmt].photo, (libPhoto() && libPhoto()[fmt] && libPhoto()[fmt].photo) || {}), o = S.photo[fmt];
+    const v = k => o[k] !== undefined ? o[k] : base[k];
+    $('photo-ctl').innerHTML = `<span class="lbl">Enquadramento no ${fmt === 'desktop' ? 'desktop' : 'mobile'}</span>` +
+      range('ph-fx', 'Foco horizontal', 0, 1, 0.005, v('fx'), pct) + range('ph-fy', 'Foco vertical', 0, 1, 0.005, v('fy'), pct) + range('ph-zoom', 'Zoom', 1, 2, 0.01, v('zoom'), v2 => (+v2).toFixed(2) + '×');
+  }
+  $('photo-ctl').addEventListener('input', e => {
+    const r = e.target; if (r.type !== 'range') return;
+    const k = r.id.slice(3); S.photo[ui.edit][k] = +r.value;
+    r.nextElementSibling.textContent = k === 'zoom' ? (+r.value).toFixed(2) + '×' : pct(r.value);
+    queue([ui.edit]);
+  });
+  function libPhoto() { return S.photoSrc ? null : ((model.photos || []).find(p => p.id === S.photoId) || null); }
+  function paramVal(fmt, k) { const o = S.params[fmt][k]; if (o !== undefined) return o; const L = libPhoto(), lp = (L && L[fmt] && L[fmt].params) || {}; if (lp[k] !== undefined) return lp[k]; const F = model.formats[fmt].params || {}; return F[k] !== undefined ? F[k] : model.params[k]; }
+  function buildSceneCtl() {
+    const fmt = ui.edit;
+    const ch = (model.choices || []).map(([k, lab, opts]) => { const cur = paramVal(fmt, k); return `<div class="field"><span class="lbl">${lab}</span><div class="chips" data-choice="${k}">${opts.map(([v, l]) => `<button class="chip" data-v="${v}" aria-pressed="${v === cur}">${l}</button>`).join('')}</div></div>`; }).join('');
+    const toHex = c => '#' + c.map(v => Math.round(v).toString(16).padStart(2, '0')).join('');
+    const auto = k => model.autoColor ? toHex(model.autoColor(k, E.hex(S.primary), E.hex(S.secondary), S.tone)) : '#888888';
+    const cols = (model.colorParams || []).length ? `<div class="field"><span class="lbl">Cores das amostras</span>` + model.colorParams.map(([k, lab]) => {
+      const v = paramVal(fmt, k) || '';
+      return `<div class="colrow"><span>${lab}</span><input type="color" data-col="${k}" value="${v || auto(k)}" aria-label="${lab}"><button class="chip" data-colauto="${k}" aria-pressed="${!v}" title="Segue as cores da marca">Auto</button></div>`;
+    }).join('') + `</div>` : '';
+    $('scene-ctl').innerHTML = ch + cols + `<span class="lbl">Ajustes</span>` + model.controls.map(([k, lab, mn, mx, st]) => {
+      const perFmt = PER_FMT.includes(k);
+      return range('sc-' + k, lab + (perFmt ? ` (${fmt})` : ''), mn, mx, st, paramVal(fmt, k), v => st >= 1 ? String(Math.round(v)) : (+v).toFixed(2));
+    }).join('');
+  }
+  $('scene-ctl').addEventListener('click', e => {
+    const ab = e.target.closest('[data-colauto]');
+    if (ab) { FMTS.forEach(f => { S.params[f][ab.dataset.colauto] = ''; }); buildSceneCtl(); queue(); return; }
+    const b = e.target.closest('[data-choice] button'); if (!b) return;
+    const k = b.parentElement.dataset.choice;
+    FMTS.forEach(f => { S.params[f][k] = b.dataset.v; });
+    b.parentElement.querySelectorAll('button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    queue();
+  });
+  $('scene-ctl').addEventListener('input', e => {
+    const r = e.target;
+    if (r.type === 'color') { FMTS.forEach(f => { S.params[f][r.dataset.col] = r.value; }); const ab = r.parentElement.querySelector('[data-colauto]'); if (ab) ab.setAttribute('aria-pressed', 'false'); queue(); return; }
+    if (r.type !== 'range') return;
+    const k = r.id.slice(3), perFmt = PER_FMT.includes(k);
+    (perFmt ? [ui.edit] : FMTS).forEach(f => { S.params[f][k] = +r.value; });
+    r.nextElementSibling.textContent = +r.step >= 1 ? r.value : (+r.value).toFixed(2);
+    queue(perFmt ? [ui.edit] : FMTS);
+  });
+  $('scene-reset').addEventListener('click', () => { S.photo = { desktop: {}, mobile: {} }; S.params = { desktop: {}, mobile: {} }; buildGallery(); buildPhotoCtl(); buildSceneCtl(); queue(); });
+
+  function buildGallery() {
+    const L = libPhoto();
+    const usesPhoto = !!(model.photo || (model.photos && model.photos.length));
+    $('photo-ctl').hidden = !usesPhoto; $('ph-flip').parentElement.hidden = !usesPhoto;
+    if (!usesPhoto) { $('gallery').innerHTML = '<p class="nophoto">Este modelo é só decoração e não usa foto. Ajuste a cena abaixo.</p>'; $('ph-current').textContent = 'sem foto'; return; }
+    $('gallery').innerHTML = (model.photos || []).map(p => `<button data-ph="${p.id}" aria-pressed="${!S.photoSrc && S.photoId === p.id}" title="${p.name} · Pexels #${p.pexels}"><img src="${p.src.replace('assets/photo/', 'assets/photo/thumbs/')}" alt="${p.name}" loading="lazy"><span>${p.name}</span></button>`).join('')
+      + (S.photoSrc ? `<button aria-pressed="true" title="Foto enviada"><img src="${S.photoSrc}" alt="Foto enviada"><span>Sua foto</span></button>` : '')
+      + `<label class="up">Enviar foto<input type="file" id="photo-file" accept="image/jpeg,image/png,image/webp"></label>`;
+    $('ph-current').textContent = S.photoSrc ? 'foto enviada' : (L ? L.name : '');
+    $('photo-file').addEventListener('change', onPhotoFile);
+    const fl = (S.photo[ui.edit] || {}).flip;
+    const base = ((L && L[ui.edit] && L[ui.edit].photo) || {}).flip;
+    $('ph-flip').checked = fl !== undefined ? fl : !!base;
+  }
+  $('gallery').addEventListener('click', e => {
+    const b = e.target.closest('button[data-ph]'); if (!b) return;
+    S.photoId = b.dataset.ph; S.photoSrc = null; S.photoAsset = null; S.photoName = null;
+    S.photo = { desktop: {}, mobile: {} };
+    $('photo-name').textContent = '';
+    buildGallery(); buildPhotoCtl(); buildSceneCtl(); queue();
+  });
+  $('ph-flip').addEventListener('change', e => { FMTS.forEach(f => { S.photo[f].flip = e.target.checked; }); queue(); });
+  async function onPhotoFile(e) {
+    const f = e.target.files[0]; if (!f) return;
+    if (!/^image\/(jpeg|png|webp)$/.test(f.type)) { toast('Envie JPG, PNG ou WebP.'); return; }
+    S.photoSrc = URL.createObjectURL(f); S.photoAsset = null; S.photoName = f.name;
+    S.photo = { desktop: {}, mobile: {} };
+    $('photo-name').textContent = 'Foto: ' + f.name + (caps.assets ? ' · enviando para a biblioteca…' : '');
+    buildGallery(); buildPhotoCtl(); buildSceneCtl(); queue();
+    if (caps.assets) {
+      try { const up = await caps.assets.upload(f); S.photoAsset = up.id; S.photoSrc = up.url; $('photo-name').textContent = 'Foto: ' + f.name + ' · salva na biblioteca'; }
+      catch (err) { $('photo-name').textContent = 'Foto: ' + f.name + ' · não foi salva na biblioteca (' + (err.code || 'erro') + '); ela não entra em presets.'; }
+    } else $('photo-name').textContent = 'Foto: ' + f.name + ' · só nesta sessão (você não tem permissão de edição para salvá-la em presets).';
+    buildGallery();
+  }
+
+  /* ---------- export ---------- */
+  const slug = s => (s || '').toLowerCase().normalize('NFD').replace(/\p{M}+/gu, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const baseName = () => [slug($('client').value), model.id].filter(Boolean).join('-');
+  async function renderBlob(fmt, tone, type) {
+    const c = document.createElement('canvas');
+    await E.render(c, model, fmt, Object.assign({}, S, { tone }));
+    return new Promise((res, rej) => c.toBlob(b => b ? res(b) : rej(new Error('blob')), type, type === 'image/webp' ? 0.9 : undefined));
+  }
+  function expWarn(msg) { const w = $('exp-warn'); w.hidden = !msg; w.textContent = msg || ''; }
+  async function save(filename, data) {
+    if (!caps.downloads) { expWarn('Downloads indisponíveis nesta visualização. Abra o artefato no claude.ai para baixar.'); return false; }
+    try { await caps.downloads.save({ filename, data }); toast('Arquivo entregue: ' + filename); return true; }
+    catch (err) {
+      if (err.code === 'declined') toast('Download cancelado.');
+      else if (err.code === 'rate_limited') toast('Já há uma confirmação aberta. Conclua e tente de novo.');
+      else expWarn('Não foi possível baixar (' + (err.code || 'erro') + ').');
+      return false;
+    }
+  }
+  async function busy(btn, fn) { const t = btn.textContent; btn.disabled = true; btn.textContent = 'Gerando…'; try { await fn(); } finally { btn.disabled = false; btn.textContent = t; } }
+  [['exp-d-png', 'desktop', 'png'], ['exp-m-png', 'mobile', 'png'], ['exp-d-webp', 'desktop', 'webp'], ['exp-m-webp', 'mobile', 'webp']].forEach(([id, fmt, ext]) => {
+    $(id).addEventListener('click', () => busy($(id), async () => {
+      const b = await renderBlob(fmt, S.tone, 'image/' + ext);
+      await save(`${baseName()}-${fmt}-${S.tone === 'dark' ? 'escuro' : 'claro'}.${ext}`, b);
+    }));
+  });
+  $('exp-zip').addEventListener('click', () => busy($('exp-zip'), async () => {
+    if (!window.JSZip) { expWarn('O compactador não carregou. Use os botões avulsos.'); return; }
+    const zip = new JSZip(), base = baseName();
+    for (const fmt of FMTS) for (const tone of ['dark', 'light']) for (const ext of ['png', 'webp']) {
+      zip.file(`${base}-${fmt}-${tone === 'dark' ? 'escuro' : 'claro'}.${ext}`, await renderBlob(fmt, tone, 'image/' + ext));
+    }
+    await save(base + '-banners.zip', await zip.generateAsync({ type: 'blob' }));
+  }));
+
+  /* ---------- client presets (shared db) ---------- */
+  function renderPresets(all) {
+    allDocs = all || [];
+    const docs = allDocs.filter(d => d.data().model === model.id);
+    $('pr-count').textContent = docs.length ? String(docs.length) : '';
+    if (!docs.length) { $('pr-list').innerHTML = '<p class="empty">Nenhum preset ainda. Ajuste cores, foto e elementos para um cliente e salve.</p>'; return; }
+    $('pr-list').innerHTML = docs.map(d => {
+      const v = d.data(), when = v.savedAt ? new Date(v.savedAt).toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' }) : '';
+      return `<div class="preset"><span class="sw"><i style="background:${v.state.primary}"></i><i style="background:${v.state.secondary}"></i></span><span style="min-width:0"><b>${escapeHtml(v.name)}</b><small>${v.state.photoSrc ? 'foto própria' : (((model.photos || []).find(p => p.id === v.state.photoId) || {}).name || v.model)} · ${v.state.tone === 'dark' ? 'escuro' : 'claro'}${when ? ' · ' + when : ''}</small></span><button class="btn" data-load="${d.id}">Abrir</button><button class="x" data-del="${d.id}" aria-label="Apagar preset ${escapeHtml(v.name)}">Apagar</button></div>`;
+    }).join('');
+    presetCache = Object.fromEntries(docs.map(d => [d.id, d.data()]));
+  }
+  let presetCache = {}, armedDelete = null, allDocs = [];
+  const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  $('pr-save').addEventListener('click', async () => {
+    if (!caps.db) { toast('Presets indisponíveis nesta visualização.'); return; }
+    const name = $('client').value.trim();
+    if (!name) { $('client').focus(); toast('Escreva o nome do cliente em Exportar antes de salvar.'); return; }
+    const st = clone(S); st.text = clone(TX);
+    if (st.photoSrc && !st.photoAsset) { st.photoSrc = null; st.photoName = null; toast('A foto enviada não foi salva na biblioteca; o preset usa a foto original.'); }
+    if (st.photoAsset) st.photoSrc = '/_blob/' + st.photoAsset;
+    try {
+      await caps.db.collection('presets').doc(model.id + '--' + (slug(name) || 'cliente')).set({ name, model: model.id, state: st, savedAt: new Date().toISOString() });
+      toast('Preset salvo: ' + name);
+    } catch (err) { toast('Não foi possível salvar (' + (err.code || 'erro') + ').'); }
+  });
+  $('pr-list').addEventListener('click', async e => {
+    const l = e.target.closest('button[data-load]');
+    if (l) { const v = presetCache[l.dataset.load]; if (!v) return;
+      if (v.state.text) { const t = v.state.text; TX = Object.assign(clone(TX_DEFAULT), t, { h: Object.assign(clone(TX_DEFAULT.h), t.h), p: Object.assign(clone(TX_DEFAULT.p), t.p), b: Object.assign(clone(TX_DEFAULT.b), t.b) }); saveTX(); buildText(); }
+      loadState(v.state); $('client').value = v.name; toast('Preset aberto: ' + v.name); return; }
+    const d = e.target.closest('button[data-del]');
+    if (d) {
+      if (armedDelete !== d.dataset.del) { armedDelete = d.dataset.del; d.textContent = 'Confirmar'; setTimeout(() => { if (armedDelete === d.dataset.del) { armedDelete = null; d.textContent = 'Apagar'; } }, 3000); return; }
+      armedDelete = null;
+      try { await caps.db.doc('presets/' + d.dataset.del).delete(); toast('Preset apagado.'); } catch (err) { toast('Não foi possível apagar (' + (err.code || 'erro') + ').'); }
+    }
+  });
+  function loadState(st) {
+    S = Object.assign(blank(), clone(st));
+    $('pri-pick').value = $('pri-hex').value = S.primary; $('sec-pick').value = $('sec-hex').value = S.secondary;
+    press($('tone-dark').parentElement, S.tone === 'dark' ? $('tone-dark') : $('tone-light'));
+    $('photo-name').textContent = S.photoName ? 'Foto: ' + S.photoName : '';
+    markPal(); toneWarn(); buildSlots(); buildGallery(); buildPhotoCtl(); buildSceneCtl(); queue();
+  }
+
+  async function connect() {
+    if (!window.claude || !claude.use) { $('pr-list').innerHTML = '<p class="empty">Presets compartilhados funcionam quando a página é aberta no claude.ai.</p>'; return; }
+    const [db, assets, downloads] = await Promise.all(['db', 'assets', 'downloads'].map(n => claude.use(n).catch(() => null)));
+    caps = { db, assets, downloads };
+    if (!downloads) expWarn('Downloads indisponíveis nesta visualização.');
+    if (!db) { $('pr-list').innerHTML = '<p class="empty">Presets indisponíveis: entre no claude.ai para ver e salvar presets da equipe.</p>'; $('pr-save').disabled = true; return; }
+    const timer = setTimeout(() => { if ($('pr-list').querySelector('.empty')?.textContent.startsWith('Carregando')) $('pr-list').innerHTML = '<p class="empty">Os presets ainda não responderam. Verifique a conexão; a lista aparece sozinha.</p>'; }, 10000);
+    db.collection('presets').orderBy('savedAt', 'desc').onSnapshot(snap => { if (!snap.metadata.fromCache) clearTimeout(timer); renderPresets(snap.docs); },
+      err => { clearTimeout(timer); $('pr-list').innerHTML = `<p class="empty">Não foi possível carregar os presets (${err.code}).</p>`; });
+  }
+
+  /* ---------- boot ---------- */
+  const want = (location.hash || '').slice(1);
+  if (window.BannerModels[want]) { model = window.BannerModels[want]; S = blank(); }
+  buildNiches(); buildStrip(); header(); buildPals(); buildElPresets(); buildText();
+  loadState(S);
+  connect();
+  setTimeout(thumbs, 400);
+  window.addEventListener('hashchange', () => { const id = location.hash.slice(1); if (window.BannerModels[id]) switchModel(id); });
+})();
+</script>

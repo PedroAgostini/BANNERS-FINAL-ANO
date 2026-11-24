@@ -1,0 +1,10 @@
+{
+ "cliente": "ASC PAINTING",
+ "lote": 1,
+ "primaria": "#003D74",
+ "secundaria": "#E92328",
+ "fotos": [
+  "photo.jpg"
+ ],
+ "outros": []
+}

@@ -1,0 +1,11 @@
+{
+ "cliente": "REAL MINAS CONSTRUCTION",
+ "lote": 4,
+ "primaria": "#0A3161",
+ "secundaria": "#B31942",
+ "fotos": [
+  "photo-roof.webp",
+  "photo.jpg"
+ ],
+ "outros": []
+}

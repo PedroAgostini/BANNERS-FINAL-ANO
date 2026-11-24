@@ -1,0 +1,13 @@
+{
+ "cliente": "DB DRYWALL FINISHING CORP",
+ "lote": 3,
+ "primaria": "#2E3439",
+ "secundaria": "#C9A46A",
+ "fotos": [
+  "photo-room.webp",
+  "photo.jpg"
+ ],
+ "outros": [
+  "wall-texture.webp"
+ ]
+}

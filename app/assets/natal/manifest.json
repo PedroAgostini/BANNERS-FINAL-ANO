@@ -1,0 +1,1922 @@
+[
+ {
+  "set": "natal",
+  "path": "assets/natal/01-bordas-superiores/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/01_Bordas_superiores/variacao_01.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 56.8,
+  "edge_opaque_pct": 1.5,
+  "bbox": [
+   0,
+   0,
+   1774,
+   748
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/01-bordas-superiores/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/01_Bordas_superiores/variacao_02.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 62.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   1,
+   1774,
+   671
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/01-bordas-superiores/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/01_Bordas_superiores/variacao_03.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 60.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   4,
+   1772,
+   709
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/01-bordas-superiores/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/01_Bordas_superiores/variacao_04.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 57.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   0,
+   1773,
+   685
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/01-bordas-superiores/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/01_Bordas_superiores/variacao_05.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 57.6,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   0,
+   0,
+   1774,
+   690
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/02-cantos-opostos/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/02_Cantos_opostos/variacao_01.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 72.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   5,
+   0,
+   1250,
+   1245
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/02-cantos-opostos/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/02_Cantos_opostos/variacao_02.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 74.1,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   2,
+   0,
+   1253,
+   1248
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/02-cantos-opostos/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/02_Cantos_opostos/variacao_03.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 66.3,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   3,
+   0,
+   1254,
+   1254
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/02-cantos-opostos/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/02_Cantos_opostos/variacao_04.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 67.8,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   8,
+   3,
+   1247,
+   1245
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/02-cantos-opostos/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/02_Cantos_opostos/variacao_05.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 72.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   3,
+   0,
+   1252,
+   1250
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/03-bordas-esquerdas/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/03_Bordas_esquerdas/variacao_01.png",
+  "w": 724,
+  "h": 2172,
+  "mode": "RGBA",
+  "transparent_pct": 62.9,
+  "edge_opaque_pct": 43.1,
+  "bbox": [
+   0,
+   0,
+   494,
+   2172
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/03-bordas-esquerdas/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/03_Bordas_esquerdas/variacao_02.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 69.9,
+  "edge_opaque_pct": 40.5,
+  "bbox": [
+   0,
+   0,
+   445,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/03-bordas-esquerdas/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/03_Bordas_esquerdas/variacao_03.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 71.1,
+  "edge_opaque_pct": 40.0,
+  "bbox": [
+   0,
+   0,
+   396,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/03-bordas-esquerdas/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/03_Bordas_esquerdas/variacao_04.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 71.2,
+  "edge_opaque_pct": 37.8,
+  "bbox": [
+   0,
+   0,
+   523,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/03-bordas-esquerdas/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/03_Bordas_esquerdas/variacao_05.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 73.2,
+  "edge_opaque_pct": 33.0,
+  "bbox": [
+   0,
+   0,
+   401,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/04-bordas-direitas/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/04_Bordas_direitas/variacao_01.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 50.8,
+  "edge_opaque_pct": 43.3,
+  "bbox": [
+   401,
+   0,
+   1024,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/04-bordas-direitas/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/04_Bordas_direitas/variacao_02.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 55.1,
+  "edge_opaque_pct": 44.7,
+  "bbox": [
+   433,
+   0,
+   1024,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/04-bordas-direitas/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/04_Bordas_direitas/variacao_03.png",
+  "w": 1086,
+  "h": 1448,
+  "mode": "RGBA",
+  "transparent_pct": 60.7,
+  "edge_opaque_pct": 39.4,
+  "bbox": [
+   523,
+   0,
+   1086,
+   1448
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/04-bordas-direitas/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/04_Bordas_direitas/variacao_04.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 54.7,
+  "edge_opaque_pct": 38.8,
+  "bbox": [
+   439,
+   0,
+   1024,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/04-bordas-direitas/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/04_Bordas_direitas/variacao_05.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 57.8,
+  "edge_opaque_pct": 40.3,
+  "bbox": [
+   415,
+   0,
+   1024,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/05-bolas-e-estrelas/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/05_Bolas_e_estrelas/variacao_01.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 77.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   182,
+   0,
+   1192,
+   1224
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/05-bolas-e-estrelas/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/05_Bolas_e_estrelas/variacao_02.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 75.2,
+  "edge_opaque_pct": 0.3,
+  "bbox": [
+   326,
+   0,
+   1236,
+   1221
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/05-bolas-e-estrelas/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/05_Bolas_e_estrelas/variacao_03.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 75.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   181,
+   1,
+   1221,
+   1228
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/05-bolas-e-estrelas/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/05_Bolas_e_estrelas/variacao_04.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 75.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   131,
+   0,
+   1244,
+   1248
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/05-bolas-e-estrelas/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/05_Bolas_e_estrelas/variacao_05.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 76.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   149,
+   0,
+   1228,
+   1236
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/06-enfeites-pendurados/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/06_Enfeites_pendurados/variacao_01.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 80.8,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   16,
+   0,
+   1642,
+   926
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/06-enfeites-pendurados/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/06_Enfeites_pendurados/variacao_02.png",
+  "w": 2172,
+  "h": 724,
+  "mode": "RGBA",
+  "transparent_pct": 82.1,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   38,
+   0,
+   2142,
+   724
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/06-enfeites-pendurados/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/06_Enfeites_pendurados/variacao_03.png",
+  "w": 1774,
+  "h": 887,
+  "mode": "RGBA",
+  "transparent_pct": 81.0,
+  "edge_opaque_pct": 5.9,
+  "bbox": [
+   0,
+   0,
+   1774,
+   867
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/06-enfeites-pendurados/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/06_Enfeites_pendurados/variacao_04.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 75.5,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   22,
+   0,
+   1526,
+   1002
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/06-enfeites-pendurados/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/06_Enfeites_pendurados/variacao_05.png",
+  "w": 1374,
+  "h": 1145,
+  "mode": "RGBA",
+  "transparent_pct": 81.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   5,
+   0,
+   1371,
+   1115
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/07-presentes-e-pinheiros/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/07_Presentes_e_pinheiros/variacao_01.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 61.8,
+  "edge_opaque_pct": 1.2,
+  "bbox": [
+   245,
+   0,
+   1022,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/07-presentes-e-pinheiros/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/07_Presentes_e_pinheiros/variacao_02.png",
+  "w": 1060,
+  "h": 1484,
+  "mode": "RGBA",
+  "transparent_pct": 63.0,
+  "edge_opaque_pct": 5.2,
+  "bbox": [
+   256,
+   0,
+   1060,
+   1483
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/07-presentes-e-pinheiros/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/07_Presentes_e_pinheiros/variacao_03.png",
+  "w": 1049,
+  "h": 1499,
+  "mode": "RGBA",
+  "transparent_pct": 64.2,
+  "edge_opaque_pct": 25.8,
+  "bbox": [
+   269,
+   0,
+   1049,
+   1499
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/07-presentes-e-pinheiros/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/07_Presentes_e_pinheiros/variacao_04.png",
+  "w": 1060,
+  "h": 1484,
+  "mode": "RGBA",
+  "transparent_pct": 64.3,
+  "edge_opaque_pct": 9.1,
+  "bbox": [
+   330,
+   0,
+   1060,
+   1484
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/07-presentes-e-pinheiros/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/07_Presentes_e_pinheiros/variacao_05.png",
+  "w": 1060,
+  "h": 1484,
+  "mode": "RGBA",
+  "transparent_pct": 65.3,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   332,
+   6,
+   1054,
+   1484
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/08-bordas-de-festa/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/08_Bordas_de_festa/variacao_01.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 67.1,
+  "edge_opaque_pct": 32.3,
+  "bbox": [
+   0,
+   0,
+   411,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/08-bordas-de-festa/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/08_Bordas_de_festa/variacao_02.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 63.3,
+  "edge_opaque_pct": 33.8,
+  "bbox": [
+   0,
+   0,
+   496,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/08-bordas-de-festa/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/08_Bordas_de_festa/variacao_03.png",
+  "w": 1036,
+  "h": 1518,
+  "mode": "RGBA",
+  "transparent_pct": 62.7,
+  "edge_opaque_pct": 35.7,
+  "bbox": [
+   0,
+   0,
+   493,
+   1518
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/08-bordas-de-festa/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/08_Bordas_de_festa/variacao_04.png",
+  "w": 1024,
+  "h": 1536,
+  "mode": "RGBA",
+  "transparent_pct": 64.3,
+  "edge_opaque_pct": 27.8,
+  "bbox": [
+   0,
+   0,
+   471,
+   1536
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/08-bordas-de-festa/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/08_Bordas_de_festa/variacao_05.png",
+  "w": 1122,
+  "h": 1402,
+  "mode": "RGBA",
+  "transparent_pct": 66.3,
+  "edge_opaque_pct": 32.4,
+  "bbox": [
+   0,
+   0,
+   503,
+   1402
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/09-cantos-com-estrelas/variacao-01.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/09_Cantos_com_estrelas/variacao_01.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 66.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   41,
+   1,
+   1247,
+   1172
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/09-cantos-com-estrelas/variacao-02.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/09_Cantos_com_estrelas/variacao_02.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 67.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   54,
+   14,
+   1244,
+   1229
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/09-cantos-com-estrelas/variacao-03.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/09_Cantos_com_estrelas/variacao_03.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 67.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   52,
+   5,
+   1248,
+   1135
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/09-cantos-com-estrelas/variacao-04.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/09_Cantos_com_estrelas/variacao_04.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 65.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   13,
+   4,
+   1250,
+   1204
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/09-cantos-com-estrelas/variacao-05.png",
+  "orig": "ELEMENTOS DE NATAL/Elementos_de_Natal/09_Cantos_com_estrelas/variacao_05.png",
+  "w": 1254,
+  "h": 1254,
+  "mode": "RGBA",
+  "transparent_pct": 67.1,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   11,
+   7,
+   1244,
+   1243
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/01-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/01_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 35.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   14,
+   16,
+   1522,
+   1018
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/02-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/02_ceia.png",
+  "w": 1535,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 26.2,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   1,
+   9,
+   1534,
+   1017
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/03-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/03_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 30.8,
+  "edge_opaque_pct": 0.9,
+  "bbox": [
+   5,
+   2,
+   1536,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/04-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/04_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 30.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   11,
+   10,
+   1526,
+   1018
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/05-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/05_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 30.1,
+  "edge_opaque_pct": 0.5,
+  "bbox": [
+   0,
+   24,
+   1536,
+   1017
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/06-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/06_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.6,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   6,
+   7,
+   1529,
+   1020
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/07-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/07_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.0,
+  "edge_opaque_pct": 0.6,
+  "bbox": [
+   13,
+   20,
+   1536,
+   1020
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/08-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/08_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 36.5,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   19,
+   13,
+   1535,
+   1022
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/09-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/09_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 29.0,
+  "edge_opaque_pct": 0.8,
+  "bbox": [
+   6,
+   16,
+   1536,
+   1010
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/01-ceia/10-ceia.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/01_Ceia/10_ceia.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.6,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   0,
+   16,
+   1531,
+   1015
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/11-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/11_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 32.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   12,
+   15,
+   1524,
+   997
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/12-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/12_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 32.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   5,
+   25,
+   1529,
+   1003
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/13-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/13_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 29.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   7,
+   7,
+   1531,
+   1018
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/14-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/14_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.1,
+  "edge_opaque_pct": 2.3,
+  "bbox": [
+   0,
+   0,
+   1536,
+   1015
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/15-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/15_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 24.6,
+  "edge_opaque_pct": 2.2,
+  "bbox": [
+   0,
+   5,
+   1536,
+   1020
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/16-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/16_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 32.1,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   2,
+   20,
+   1534,
+   995
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/17-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/17_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 27.9,
+  "edge_opaque_pct": 0.3,
+  "bbox": [
+   0,
+   22,
+   1536,
+   1005
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/18-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/18_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 32.3,
+  "edge_opaque_pct": 5.0,
+  "bbox": [
+   0,
+   16,
+   1536,
+   991
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/19-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/19_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 30.3,
+  "edge_opaque_pct": 0.9,
+  "bbox": [
+   0,
+   36,
+   1536,
+   992
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/02-sofa/20-sofa.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/02_Sofa/20_sofa.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.5,
+  "edge_opaque_pct": 6.7,
+  "bbox": [
+   0,
+   12,
+   1536,
+   1013
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/21-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/21_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 34.0,
+  "edge_opaque_pct": 8.9,
+  "bbox": [
+   3,
+   11,
+   1536,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/22-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/22_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 29.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   8,
+   4,
+   1534,
+   1023
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/23-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/23_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 34.2,
+  "edge_opaque_pct": 5.0,
+  "bbox": [
+   9,
+   0,
+   1520,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/24-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/24_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 33.4,
+  "edge_opaque_pct": 8.0,
+  "bbox": [
+   6,
+   0,
+   1531,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/25-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/25_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 30.8,
+  "edge_opaque_pct": 6.4,
+  "bbox": [
+   4,
+   0,
+   1531,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/26-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/26_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 33.6,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   3,
+   0,
+   1533,
+   1022
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/27-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/27_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 33.9,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   7,
+   0,
+   1533,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/28-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/28_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 28.5,
+  "edge_opaque_pct": 5.9,
+  "bbox": [
+   1,
+   2,
+   1535,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/29-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/29_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 31.6,
+  "edge_opaque_pct": 5.3,
+  "bbox": [
+   0,
+   8,
+   1532,
+   1024
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/familias/03-chao/30-chao.png",
+  "orig": "ELEMENTOS DE NATAL/Familias_Natal/03_Chao/30_chao.png",
+  "w": 1536,
+  "h": 1024,
+  "mode": "RGBA",
+  "transparent_pct": 38.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   6,
+   2,
+   1531,
+   1023
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/01.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/01.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   853,
+   2,
+   1645,
+   912
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/02.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/02.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   10,
+   8,
+   733,
+   936
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/03.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/03.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 73.9,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   739,
+   1,
+   1665,
+   936
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/04.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/04.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   911,
+   0,
+   1669,
+   930
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/05.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/05.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 71.3,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   839,
+   0,
+   1669,
+   937
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/06.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/06.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 69.6,
+  "edge_opaque_pct": 6.3,
+  "bbox": [
+   864,
+   0,
+   1672,
+   927
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/07.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/07.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.5,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   16,
+   3,
+   730,
+   928
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/08.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/08.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 72.7,
+  "edge_opaque_pct": 1.8,
+  "bbox": [
+   733,
+   6,
+   1672,
+   927
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/09.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/09.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 77.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   909,
+   0,
+   1663,
+   927
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/10.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/10.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.2,
+  "edge_opaque_pct": 0.3,
+  "bbox": [
+   851,
+   9,
+   1672,
+   928
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/11.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/11.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 71.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   781,
+   5,
+   1671,
+   935
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/12.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/12.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 70.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   799,
+   0,
+   1671,
+   938
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/13.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/13.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 70.8,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   8,
+   0,
+   764,
+   928
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/14.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/14.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 71.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   752,
+   0,
+   1654,
+   927
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/01-neve/15.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/01_Neve/15.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   889,
+   6,
+   1667,
+   926
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/01.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/01.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 73.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   753,
+   1,
+   1663,
+   932
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/02.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/02.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   2,
+   780,
+   929
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/03.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/03.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 71.1,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   598,
+   2,
+   1667,
+   937
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/04.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/04.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.4,
+  "edge_opaque_pct": 0.3,
+  "bbox": [
+   818,
+   2,
+   1672,
+   935
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/05.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/05.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 73.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   801,
+   7,
+   1659,
+   932
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/06.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/06.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   859,
+   8,
+   1668,
+   933
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/07.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/07.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.7,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   3,
+   1,
+   737,
+   926
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/08.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/08.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 72.0,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   612,
+   1,
+   1668,
+   929
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/09.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/09.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 69.6,
+  "edge_opaque_pct": 0.2,
+  "bbox": [
+   849,
+   0,
+   1672,
+   910
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/10.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/10.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   862,
+   9,
+   1658,
+   933
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/11.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/11.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   851,
+   7,
+   1669,
+   930
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/12.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/12.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 74.5,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   794,
+   2,
+   1667,
+   924
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/13.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/13.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 73.8,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   7,
+   3,
+   799,
+   926
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/14.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/14.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.6,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   802,
+   2,
+   1670,
+   913
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/02-lanternas-presentes/15.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/02_Lanternas_Presentes/15.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 75.4,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   846,
+   2,
+   1666,
+   917
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/01.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/01.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 66.4,
+  "edge_opaque_pct": 23.2,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/02.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/02.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 67.7,
+  "edge_opaque_pct": 24.5,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/03.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/03.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 62.4,
+  "edge_opaque_pct": 27.8,
+  "bbox": [
+   1,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/04.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/04.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 61.8,
+  "edge_opaque_pct": 16.4,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/05.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/05.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 62.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   2,
+   1671,
+   933
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/06.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/06.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 66.0,
+  "edge_opaque_pct": 22.5,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/07.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/07.png",
+  "w": 1671,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 68.6,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   12,
+   7,
+   1662,
+   931
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/08.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/08.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 65.1,
+  "edge_opaque_pct": 22.9,
+  "bbox": [
+   0,
+   2,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/09.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/09.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 63.2,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   5,
+   6,
+   1668,
+   933
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/10.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/10.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 67.1,
+  "edge_opaque_pct": 8.9,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/11.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/11.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 63.2,
+  "edge_opaque_pct": 9.4,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/12.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/12.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 62.2,
+  "edge_opaque_pct": 21.5,
+  "bbox": [
+   0,
+   0,
+   1672,
+   909
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/13.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/13.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 61.5,
+  "edge_opaque_pct": 0.0,
+  "bbox": [
+   0,
+   0,
+   1670,
+   936
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/14.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/14.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 63.3,
+  "edge_opaque_pct": 4.1,
+  "bbox": [
+   0,
+   0,
+   1672,
+   941
+  ]
+ },
+ {
+  "set": "natal",
+  "path": "assets/natal/hero/03-molduras-pinheiros/15.png",
+  "orig": "ELEMENTOS DE NATAL/Natal_Hero_Elementos_Transparentes/03_Molduras_Pinheiros/15.png",
+  "w": 1672,
+  "h": 941,
+  "mode": "RGBA",
+  "transparent_pct": 65.5,
+  "edge_opaque_pct": 8.3,
+  "bbox": [
+   2,
+   1,
+   1672,
+   935
+  ]
+ }
+]

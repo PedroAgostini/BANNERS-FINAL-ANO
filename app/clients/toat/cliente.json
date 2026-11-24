@@ -1,0 +1,12 @@
+{
+ "cliente": "LANDSCAPING TO AT",
+ "lote": 4,
+ "primaria": "#163A1E",
+ "secundaria": "#2D9B43",
+ "fotos": [
+  "photo.jpg"
+ ],
+ "outros": [
+  "logo.webp"
+ ]
+}

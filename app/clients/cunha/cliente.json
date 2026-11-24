@@ -1,0 +1,12 @@
+{
+ "cliente": "CUNHA PAINTING SERVICES",
+ "lote": 4,
+ "primaria": "#151740",
+ "secundaria": "#F2B233",
+ "fotos": [
+  "photo-cabinets.webp",
+  "photo-living.webp",
+  "photo.jpg"
+ ],
+ "outros": []
+}
